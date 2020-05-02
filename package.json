@@ -9,11 +9,14 @@
     "start": "nodemon -r esm app.js"
   },
   "dependencies": {
+    "axios": "^0.19.2",
     "body-parser": "^1.19.0",
     "dotenv": "^8.2.0",
     "esm": "^3.2.25",
     "express": "^4.17.1",
-    "util": "^0.12.3"
+    "lodash": "^4.17.15",
+    "util": "^0.12.3",
+    "xml2js": "^0.4.23"
   },
   "devDependencies": {
     "@babel/core": "^7.9.6",
