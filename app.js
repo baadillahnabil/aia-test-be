@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import { config } from 'dotenv'
 import express from 'express'
 
