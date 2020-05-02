@@ -1,0 +1,38 @@
+{
+  "name": "backend-code-nodejs",
+  "version": "1.0.0",
+  "main": "app.js",
+  "repository": "git@personal:Four-Films-In-A-Box/backend-code-nodejs.git",
+  "author": "baadillahnabil <nabilzero27@gmail.com>",
+  "license": "Copyright",
+  "private": true,
+  "scripts": {
+    "start": "nodemon -r esm app.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "util": "^0.12.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-module-resolver": "^4.0.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-import-resolver-babel-module": "^5.1.2",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-module-resolver": "^0.16.0",
+    "eslint-plugin-prettier": "^3.1.3",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-watch": "^6.0.1",
+    "nodemon": "^2.0.3",
+    "prettier": "^2.0.5",
+    "source-map": "^0.7.3"
+  }
+}
