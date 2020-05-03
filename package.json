@@ -5,10 +5,15 @@
   "author": "baadillahnabil <nabilzero27@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon -r esm app.js"
+    "start:dev": "babel-node app.js",
+    "start": "yarn build && node ./build/app.js",
+    "clean": "rm -rf build && mkdir build",
+    "build-babel": "babel -d ./build app.js -s",
+    "build": "yarn clean && yarn build-babel"
   },
   "dependencies": {
     "axios": "^0.19.2",
+    "babel-preset-env": "^1.7.0",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
@@ -20,6 +25,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.9.6",
+    "babel-cli": "^6.26.0",
     "babel-eslint": "^10.1.0",
     "babel-plugin-module-resolver": "^4.0.0",
     "eslint": "^6.8.0",
@@ -36,8 +42,5 @@
     "nodemon": "^2.0.3",
     "prettier": "^2.0.5",
     "source-map": "^0.7.3"
-  },
-  "engines": {
-    "node": "10.x"
   }
 }
