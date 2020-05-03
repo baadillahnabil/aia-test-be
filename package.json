@@ -5,11 +5,11 @@
   "author": "baadillahnabil <nabilzero27@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start:dev": "babel-node app.js",
-    "start": "yarn build && node ./build/app.js",
-    "clean": "rm -rf build && mkdir build",
-    "build-babel": "babel -d ./build app.js -s",
-    "build": "yarn clean && yarn build-babel"
+    "start:dev": "babel-node app.js"
+    // "start": "yarn build && node ./build/app.js",
+    // "clean": "rm -rf build && mkdir build",
+    // "build-babel": "babel -d ./build app.js -s",
+    // "build": "yarn clean && yarn build-babel"
   },
   "dependencies": {
     "axios": "^0.19.2",
