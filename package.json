@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "main": "app.js",
   "author": "baadillahnabil <nabilzero27@gmail.com>",
-  "license": "Copyright",
-  "private": true,
+  "license": "MIT",
   "scripts": {
     "start": "nodemon -r esm app.js"
   },
@@ -37,5 +36,8 @@
     "nodemon": "^2.0.3",
     "prettier": "^2.0.5",
     "source-map": "^0.7.3"
+  },
+  "engines": {
+    "node": "10.x"
   }
 }
