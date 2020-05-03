@@ -9,7 +9,8 @@
     "build": "yarn clean && yarn build:babel",
     "build:babel": "babel -d ./build ./src -s",
     "start": "yarn build && node ./build/index.js",
-    "clean": "rm -rf build && mkdir build"
+    "clean": "rm -rf build && mkdir build",
+    "heroku-postbuild": "cd client && yarn && yarn build"
   },
   "dependencies": {
     "axios": "^0.19.2",
