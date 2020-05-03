@@ -5,7 +5,11 @@
   "author": "baadillahnabil <nabilzero27@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start:dev": "babel-node app.js"
+    "start:dev": "babel-node ./src/app.js",
+    "build": "yarn clean && yarn build:babel",
+    "build:babel": "babel -d ./build ./src -s",
+    "start": "yarn build && node ./build/index.js",
+    "clean": "rm -rf build && mkdir build"
   },
   "dependencies": {
     "axios": "^0.19.2",
