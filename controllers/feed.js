@@ -12,9 +12,9 @@ export const getFeeds = (req, res) => {
           success: true,
           data: map(result.feed.entry, (data) => ({
             author: {
-              name: data.author[0].name,
-              avatar: data.author[0]['flickr:buddyicon'],
-              url: data.author[0].uri
+              name: data.author[0].name[0],
+              avatar: data.author[0]['flickr:buddyicon'][0],
+              url: data.author[0].uri[0]
             },
             content: {
               image: find(data.link, (link) => link.$.rel === 'enclosure').$
