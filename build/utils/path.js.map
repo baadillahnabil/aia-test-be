@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../src/utils/path.js"],"names":["path","dirname","process","mainModule","filename"],"mappings":";;;;;;AAAA;;;;;;kBAEeA,eAAKC,OAAL,CAAaC,QAAQC,UAAR,CAAmBC,QAAhC,C","file":"path.js","sourcesContent":["import path from 'path'\n\nexport default path.dirname(process.mainModule.filename)\n"]}
