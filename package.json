@@ -12,6 +12,7 @@
     "clean": "rm -rf build && mkdir build"
   },
   "dependencies": {
+    "@babel/core": "^7.9.6",
     "axios": "^0.19.2",
     "babel-preset-env": "^1.7.0",
     "body-parser": "^1.19.0",
@@ -24,7 +25,6 @@
     "xml2js": "^0.4.23"
   },
   "devDependencies": {
-    "@babel/core": "^7.9.6",
     "babel-cli": "^6.26.0",
     "babel-eslint": "^10.1.0",
     "babel-plugin-module-resolver": "^4.0.0",
